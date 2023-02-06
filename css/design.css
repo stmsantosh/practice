@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.carttext {
+    padding: 40px 0 80px;
+    text-align: center;
+}
+
+.carttext p {
+    margin: 40px;
+    font-size: 40px;
+
+}
+
+.carttext a {
+    padding: 10px 8px;
+    color: #fff;
+    background-color: #ff4f04;
+    border-radius: 4px;
+    margin-top: 20px;
+}

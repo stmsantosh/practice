@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Clothes</title>
+    <script src="https://kit.fontawesome.com/c7a1b9b71e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Google Fonts
+            ============================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c7a1b9b71e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+
+<body>
+    <section class="line">
+        <div class="container">
+            <div class=" header">
+                <div class="headerbox">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-4 col-sm-2 col-lg-2 ">
+                            <div class="logo">
+                                <a href="index.html"> <img src="img/WhatsApp Image 2021-03-10 at 11.31.14.png" alt="">
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-7 col-lg-7 ">
+                            <form class="d-flex search searchbox" role="search">
+                                <input class="form-control me-2 text" type="search"
+                                    placeholder="Search For Products, Brands & Categories" aria-label="Search">
+                                <div class="searchicon">
+                                    <a href="#">
+                                        <img src="img/Search.svg" alt="">
+                                    </a>
+                                </div>
+
+                            </form>
+
+                        </div>
+                        <div class="col-4 col-sm-3 col-lg-3 icons">
+
+                            <div class="icon">
+                                <a href="#" class="search_icon" id="icon" onclick="myFunction()">
+                                    <img src="img/Search.svg" alt="">
+                                </a>
+                            </div>
+                            <div id="btn">
+
+                                <span class="xmark" class="close"><i onclick="myFunction1()"
+                                        class="lnr lnr-cross"></i></span>
+                            </div>
+                            <div class="icon heart"> <a href="#">
+                                    <img src="img/heart.svg" alt="heart">
+                                    <span class="count ">0</span>
+                                </a></div>
+                            <div class="icon"><a href="user.html">
+                                    <img src="img/user.svg" alt="user">
+                                </a></div>
+                            <div class="icon cart"><a href="#">
+                                    <img src="img/cart.svg" alt="cart">
+                                    <span class="count">0</span>
+
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div class="searchBoxes">
+        <div id="modal" class="model">
+
+            <div class="search2">
+                <a href="#" class="searchbox1">
+                    <input type="text" placeholder="search..">
+                    <img src="img/Search.svg" alt="">
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ------------------------------------Navbar section---------------------------- -------->
+
+    <section class="container">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <li class="nav-item dropdown d-flex  align-items-center">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/path.svg" alt="Hamburger Icon" class="hamburger">
+                        All Categories
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="clothes.html">Mens</a></li>
+                        <li><a class="dropdown-item" href="shop.html">Shoes</a></li>
+                        <li><a class="dropdown-item" href="watch.html">Watches</a></li>
+                        <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="mobile.html">Mobiles</a></li>
+                    </ul>
+                </li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New Arrivals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Deals For You</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Discounts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Weekly Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vendor.html">Become a Vendor</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <!-- product items banner start -->
+    <div class="product-banner">
+        <img src="img/cloth/banner.webp" alt="">
+    </div>
+
+    <!-- product main items area start -->
+    <div class="product-main-items">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="location">
+                        <ul>
+                            <li><a href="index.html" title="go to homepage">Home<span>/</span></a> </li>
+                            <li><strong> shop</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="product-sidebar">
+                        <div class="sidebar-title">
+                            <h2>Shopping Options</h2>
+                        </div>
+                        <div class="single-sidebar">
+                            <div class="single-sidebar-title">
+                                <h3>Category</h3>
+                            </div>
+                            <div class="single-sidebar-content">
+                                <ul>
+                                    <li><a href="watch.html">Watches (4)</a></li>
+                                    <li><a href="shoes.html">shoes (6)</a></li>
+                                    <li><a href="mobile.html">Mobiles(1)</a></li>
+                                    <li><a href="#">Clothing (3)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="single-sidebar">
+                            <div class="single-sidebar-title">
+                                <h3>Color</h3>
+                            </div>
+                            <div class="single-sidebar-content">
+                                <ul>
+                                    <li><a href="#">Black (2)</a></li>
+                                    <li><a href="#">Blue (2)</a></li>
+                                    <li><a href="#">Green (4)</a></li>
+                                    <li><a href="#">Grey (2)</a></li>
+                                    <li><a href="#">Red (2)</a></li>
+                                    <li><a href="#">White (2)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="single-sidebar">
+                            <div class="single-sidebar-title">
+                                <h3>Manufacturer</h3>
+                            </div>
+                            <div class="single-sidebar-content">
+                                <ul>
+                                    <li><a href="#">Calvin Klein (2)</a></li>
+                                    <li><a href="#">Diesel (2)</a></li>
+                                    <li><a href="#">option value (1)</a></li>
+                                    <li><a href="#">Polo (2)</a></li>
+                                    <li><a href="#">store view (4)</a></li>
+                                    <li><a href="#">Tommy Hilfiger (2)</a></li>
+                                    <li><a href="#">will be used (1)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="single-sidebar price">
+                            <div class="single-sidebar-title">
+                                <h3>Price</h3>
+                            </div>
+                            <div class="single-sidebar-content">
+                                <div class="price-range">
+                                    <div class="price-filter">
+                                        <div id="slider-range"></div>
+                                        <div class="price-slider-amount">
+                                            <input type="text" id="amount" name="price"  placeholder="Add Your Price"/>
+                                        </div>
+                                    </div>
+                                    <button type="submit"> <span>search</span> </button>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="banner-left">
+                            <a href="#">
+                                <img src="img/cloth/banner-left.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="product-bar">
+                        <div class="sort-by">
+                            <label>Sort By</label>
+                            <select name="sort">
+                                <option value="#" selected>Position</option>
+                                <option value="#">Name</option>
+                                <option value="#">Price</option>
+                            </select>
+                            <a href="#" title="Set Descending Direction">
+                                <img src="img/product/i_asc_arrow.gif" alt="">
+                            </a>
+                        </div>
+                        <div class="limit-product">
+                            <label>Show</label>
+                            <select name="show">
+                                <option value="#" selected>9</option>
+                                <option value="#">12</option>
+                                <option value="#">24</option>
+                                <option value="#">36</option>
+                                <option value="#"></option>
+                            </select>
+                            per page
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="product-content">
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active fade in home2" id="gird">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="col-lg-4 col-sm-6 col-12">
+                                            <div class="single-product">
+                                                <div class="level-pro-new">
+                                                    <span>new</span>
+                                                </div>
+                                                <div class="product-img">
+                                                    <a href="shoes.html">
+                                                        <img src="img/cloth/6.png" alt="" class="primary-img">
+                                                        <img src="img/cloth/4.png" alt="" class="secondary-img">
+                                                    </a>
+                                                </div>
+                                                <div class="actions">
+                                                    <button type="submit" class="cart-btn" title="Add to cart">add to
+                                                        cart</button>
+                                                    <ul class="add-to-link">
+                                                        <li><a href="#"> <i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#"> <i class="fa fa-refresh"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <div class="product-name">
+                                                        <a href="single-product.html" title="Fusce aliquam">Fusce
+                                                            aliquam</a>
+                                                    </div>
+                                                    <div class="price-rating">
+                                                        <span>$170.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-12">
+                                            <div class="single-product">
+                                                <!-- <div class="level-pro-new">
+                                                    <span>new</span>
+                                                </div> -->
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="img/cloth/5.png" alt="" class="primary-img">
+                                                        <img src="img/cloth/4.png" alt="" class="secondary-img">
+                                                    </a>
+                                                </div>
+                                                <div class="actions">
+                                                    <button type="submit" class="cart-btn" title="Add to cart">add to
+                                                        cart</button>
+                                                    <ul class="add-to-link">
+                                                        <li><a href="#"> <i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#"> <i class="fa fa-refresh"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <div class="product-name">
+                                                        <a href="shoes.html" title="Fusce aliquam">Fusce
+                                                            aliquam</a>
+                                                    </div>
+                                                    <div class="price-rating">
+                                                        <span>$170.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-12">
+                                            <div class="single-product">
+                                                <div class="level-pro-new">
+                                                    <span>new</span>
+                                                </div>
+                                                <div class="product-img">
+                                                    <a href="shoes.html">
+                                                        <img src="img/cloth/7.png" alt="" class="primary-img">
+                                                        <img src="img/cloth/3.png" alt="" class="secondary-img">
+                                                    </a>
+                                                </div>
+                                                <div class="actions">
+                                                    <button type="submit" class="cart-btn" title="Add to cart">add to
+                                                        cart</button>
+                                                    <ul class="add-to-link">
+                                                        <li><a href="#"> <i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#"> <i class="fa fa-refresh"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <div class="product-name">
+                                                        <a href="shoes.html" title="Fusce aliquam">Fusce
+                                                            aliquam</a>
+                                                    </div>
+                                                    <div class="price-rating">
+                                                        <span>$170.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="col-lg-4 col-sm-6 col-12">
+                                            <div class="single-product">
+                                                <div class="level-pro-new">
+                                                    <span>new</span>
+                                                </div>
+                                                <div class="product-img">
+                                                    <a href="shoes.html">
+                                                        <img src="img/cloth/8.png" alt="" class="primary-img">
+                                                        <img src="img/cloth/2.png" alt="" class="secondary-img">
+                                                    </a>
+                                                </div>
+                                                <div class="actions">
+                                                    <button type="submit" class="cart-btn" title="Add to cart">add to
+                                                        cart</button>
+                                                    <ul class="add-to-link">
+                                                        <li><a href="#"> <i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#"> <i class="fa fa-refresh"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <div class="product-name">
+                                                        <a href="single-product.html" title="Fusce aliquam">Fusce
+                                                            aliquam</a>
+                                                    </div>
+                                                    <div class="price-rating">
+                                                        <span>$170.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-12">
+                                            <div class="single-product">
+                                                <div class="level-pro-new">
+                                                    <span>new</span>
+                                                </div>
+                                                <div class="product-img">
+                                                    <a href="shoes.html">
+                                                        <img src="img/cloth/9.png" alt="" class="primary-img">
+                                                        <img src="img/cloth/1.png" alt="" class="secondary-img">
+                                                    </a>
+                                                </div>
+                                                <div class="actions">
+                                                    <button type="submit" class="cart-btn" title="Add to cart">add to
+                                                        cart</button>
+                                                    <ul class="add-to-link">
+                                                        <li><a href="#"> <i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#"> <i class="fa fa-refresh"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <div class="product-name">
+                                                        <a href="shoes.html" title="Fusce aliquam">Fusce
+                                                            aliquam</a>
+                                                    </div>
+                                                    <div class="price-rating">
+                                                        <span>$170.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-12">
+                                            <div class="single-product">
+                                                <!-- <div class="level-pro-new">
+                                                    <span>new</span>
+                                                </div> -->
+                                                <div class="product-img">
+                                                    <a href="shoes.html">
+                                                        <img src="img/cloth/2.png" alt="" class="primary-img">
+                                                        <img src="img/cloth/3.png" alt="" class="secondary-img">
+                                                    </a>
+                                                </div>
+                                                <div class="actions">
+                                                    <button type="submit" class="cart-btn" title="Add to cart">add to
+                                                        cart</button>
+                                                    <ul class="add-to-link">
+                                                        <li><a href="#"> <i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#"> <i class="fa fa-refresh"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <div class="product-name">
+                                                        <a href="single-product.html" title="Fusce aliquam">Fusce
+                                                            aliquam</a>
+                                                    </div>
+                                                    <div class="price-rating">
+                                                        <span>$170.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="col-lg-4 col-sm-6 col-12">
+                                            <div class="single-product">
+                                                <!-- <div class="level-pro-new">
+                                                    <span>new</span>
+                                                </div> -->
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="img/cloth/4.png"  alt="" class="primary-img">
+                                                        <img src="img/cloth/5.png" alt="" class="secondary-img">
+                                                    </a>
+                                                </div>
+                                                <div class="actions">
+                                                    <button type="submit" class="cart-btn" title="Add to cart">add to
+                                                        cart</button>
+                                                    <ul class="add-to-link">
+                                                        <li><a href="#"> <i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#"> <i class="fa fa-refresh"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <div class="product-name">
+                                                        <a href="single-product.html" title="Fusce aliquam">Fusce
+                                                            aliquam</a>
+                                                    </div>
+                                                    <div class="price-rating">
+                                                        <span>$170.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-12">
+                                            <div class="single-product">
+                                                <div class="level-pro-new">
+                                                    <span>new</span>
+                                                </div>
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="img/cloth/6.png"  alt="" class="primary-img">
+                                                        <img src="img/cloth/7.png"  alt="" class="secondary-img">
+                                                    </a>
+                                                </div>
+                                                <div class="actions">
+                                                    <button type="submit" class="cart-btn" title="Add to cart">add to
+                                                        cart</button>
+                                                    <ul class="add-to-link">
+                                                        <li><a href="#"> <i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#"> <i class="fa fa-refresh"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <div class="product-name">
+                                                        <a href="single-product.html" title="Fusce aliquam">Fusce
+                                                            aliquam</a>
+                                                    </div>
+                                                    <div class="price-rating">
+                                                        <span>$170.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-12">
+                                            <div class="single-product">
+                                                <!-- <div class="level-pro-new">
+                                                    <span>new</span>
+                                                </div> -->
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="img/cloth/8.png"  alt="" class="primary-img">
+                                                        <img src="img/cloth/9.png" alt="" class="secondary-img">
+                                                    </a>
+                                                </div>
+                                                <div class="actions">
+                                                    <button type="submit" class="cart-btn" title="Add to cart">add to
+                                                        cart</button>
+                                                    <ul class="add-to-link">
+                                                        <li><a href="#"> <i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#"> <i class="fa fa-refresh"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <div class="product-name">
+                                                        <a href="single-product.html" title="Fusce aliquam">Fusce
+                                                            aliquam</a>
+                                                    </div>
+                                                    <div class="price-rating">
+                                                        <span>$170.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane fade home2 " id="list">
+                                    <div class="product-catagory">
+                                        <div class="single-list-product">
+                                            <div class="col-sm-4">
+                                                <div class="list-product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="img/product/1.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="list-product-info">
+                                                    <a href="single-product.html" class="list-product-name"> Cras
+                                                        neque metus</a>
+                                                    <div class="price-rating">
+                                                        <span class="old-price">$700.00</span>
+                                                        <span>$800.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                            <a href="#" class="review">1 Review(s)</a>
+                                                            <a href="#" class="add-review">Add Your Review</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-product-details">
+                                                        <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum,
+                                                            gravida et mattis vulputate, tristique ut lectus. Sed et
+                                                            lorem nunc. Vestibulum ante ipsum primis in faucibus
+                                                            orci luctus et ultrices posuere cubilia Curae; Aenean
+                                                            eleifend laoreet congue. Vivamus adipiscing nisl ut
+                                                            dolor dignissim semper. Nul
+                                                            <a href="single-product.html">Learn More</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-list-product">
+                                            <div class="col-sm-4">
+                                                <div class="list-product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="img/product/6.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="list-product-info">
+                                                    <a href="single-product.html" class="list-product-name"> Cras
+                                                        neque metus</a>
+                                                    <div class="price-rating">
+                                                        <span class="old-price">$700.00</span>
+                                                        <span>$800.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                            <a href="#" class="review">1 Review(s)</a>
+                                                            <a href="#" class="add-review">Add Your Review</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-product-details">
+                                                        <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum,
+                                                            gravida et mattis vulputate, tristique ut lectus. Sed et
+                                                            lorem nunc. Vestibulum ante ipsum primis in faucibus
+                                                            orci luctus et ultrices posuere cubilia Curae; Aenean
+                                                            eleifend laoreet congue. Vivamus adipiscing nisl ut
+                                                            dolor dignissim semper. Nul
+                                                            <a href="single-product.html">Learn More</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-list-product">
+                                            <div class="col-sm-4">
+                                                <div class="list-product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="img/cloth/7.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="list-product-info">
+                                                    <a href="single-product.html" class="list-product-name"> Cras
+                                                        neque metus</a>
+                                                    <div class="price-rating">
+                                                        <span class="old-price">$700.00</span>
+                                                        <span>$800.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                            <a href="#" class="review">1 Review(s)</a>
+                                                            <a href="#" class="add-review">Add Your Review</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-product-details">
+                                                        <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum,
+                                                            gravida et mattis vulputate, tristique ut lectus. Sed et
+                                                            lorem nunc. Vestibulum ante ipsum primis in faucibus
+                                                            orci luctus et ultrices posuere cubilia Curae; Aenean
+                                                            eleifend laoreet congue. Vivamus adipiscing nisl ut
+                                                            dolor dignissim semper. Nul
+                                                            <a href="single-product.html">Learn More</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-list-product">
+                                            <div class="col-sm-4">
+                                                <div class="list-product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="img/cloth/8.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="list-product-info">
+                                                    <a href="single-product.html" class="list-product-name"> Cras
+                                                        neque metus</a>
+                                                    <div class="price-rating">
+                                                        <span class="old-price">$700.00</span>
+                                                        <span>$800.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                            <a href="#" class="review">1 Review(s)</a>
+                                                            <a href="#" class="add-review">Add Your Review</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-product-details">
+                                                        <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum,
+                                                            gravida et mattis vulputate, tristique ut lectus. Sed et
+                                                            lorem nunc. Vestibulum ante ipsum primis in faucibus
+                                                            orci luctus et ultrices posuere cubilia Curae; Aenean
+                                                            eleifend laoreet congue. Vivamus adipiscing nisl ut
+                                                            dolor dignissim semper. Nul
+                                                            <a href="single-product.html">Learn More</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-list-product">
+                                            <div class="col-sm-4">
+                                                <div class="list-product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="img/cloth/9.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="list-product-info">
+                                                    <a href="single-product.html" class="list-product-name"> Cras
+                                                        neque metus</a>
+                                                    <div class="price-rating">
+                                                        <span class="old-price">$700.00</span>
+                                                        <span>$800.00</span>
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                            <a href="#" class="review">1 Review(s)</a>
+                                                            <a href="#" class="add-review">Add Your Review</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-product-details">
+                                                        <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum,
+                                                            gravida et mattis vulputate, tristique ut lectus. Sed et
+                                                            lorem nunc. Vestibulum ante ipsum primis in faucibus
+                                                            orci luctus et ultrices posuere cubilia Curae; Aenean
+                                                            eleifend laoreet congue. Vivamus adipiscing nisl ut
+                                                            dolor dignissim semper. Nul
+                                                            <a href="single-product.html">Learn More</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="toolbar-bottom">
+                                <ul>
+                                    <li><span>Pages:</span></li>
+                                    <li class="current"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#"> <img src="img/product/pager_arrow_right.gif" alt=""> </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------Footer section------------------------ -->
+    <footer>
+
+        <div class="footer_text container">
+            <div class="textlogo">
+                <img src="img/WhatsApp Image 2021-03-10 at 11.31.14.png" alt="">
+                <br>
+                <div class="lorem">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore </p>
+                </div>
+
+
+            </div>
+            <div class="footernav">
+                <div class="products">
+                    <ul>
+                        <a href="#">
+                            <li><b>Products</b></li>
+                        </a>
+                        <a href="#">
+                            <li>Trending</li>
+                        </a>
+                        <a href="#">
+                            <li>My Account</li>
+                        </a>
+                        <a href="#">
+                            <li>Vendors</li>
+                        </a>
+                        <a href="#">
+                            <li>Brands</li>
+                        </a>
+                        <a href="#">
+                            <li>Storefront</li>
+                        </a>
+                    </ul>
+
+                </div>
+                <div class="legals">
+                    <ul>
+                        <a href="#">
+                            <li><b>Legals</b> </li>
+                        </a>
+                        <a href="#">
+                            <li>License</li>
+                        </a>
+                        <a href="#">
+                            <li>Refund Policy</li>
+                        </a>
+                        <a href="#">
+                            <li>About Us</li>
+                        </a>
+                        <a href="#">
+                            <li>Contacts</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="contacts">
+
+                    <ul>
+                        <a href="#">
+                            <li><b> Contacts </b></li>
+                        </a>
+                        <a href="#">
+                            <li>Fell free get in touch with us via phone or <br> send us a message</li>
+                        </a>
+                        <a href="#">
+                            <li>+1 234 567 89 10</li>
+                        </a>
+                        <a href="#">
+                            <li></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
